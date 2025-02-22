@@ -1,0 +1,18 @@
+{
+  "Variables":[],
+  "Sequence":{
+    "SeqName":"LEAK-ROR",
+    "SeqId":"9FCC9B83-BBCF-45C4-AD3E-97136DF51BA9",
+    "SeqComment":"",
+    "Preconditions":[]
+  },
+  "Steps":[
+    {
+      "StepName":"Sequence Call",
+      "StepId":"E10E9E59-E073-46F9-8DE7-35B4142547D7",
+      "StepComment":"Call: TFX-ROR",
+      "StepRunMode":"Normal",
+      "Path":"Sequences\\LEAK-ROR\\TFX-ROR\\TFX-ROR.seq"
+    }
+  ]
+}

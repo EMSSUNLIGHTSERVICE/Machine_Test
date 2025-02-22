@@ -1,0 +1,35 @@
+{
+  "Variables":[],
+  "Sequence":{
+    "SeqName":"Clear Latched Interlock Register",
+    "SeqId":"ECA16242-4DC7-40EF-B4B0-BD27319A5167",
+    "SeqComment":"",
+    "Preconditions":[]
+  },
+  "Steps":[
+    {
+      "StepName":"Node Board",
+      "StepId":"96D7FC12-57D8-410D-8D94-20B3134B38BA",
+      "StepComment":"Reset Error Latch",
+      "StepRunMode":"Normal",
+      "Queries":[],
+      "Commands":[{"Name":"uut.lds.reset errors off"}]
+    },
+    {
+      "StepName":"Wait",
+      "StepId":"1A717086-726E-45D2-8400-6A2E32996B56",
+      "StepComment":"",
+      "StepRunMode":"Normal",
+      "Time":1,
+      "Units":"s"
+    },
+    {
+      "StepName":"Node Board",
+      "StepId":"A89E67D6-B433-4791-8917-3EFDA59C70DE",
+      "StepComment":"Clear Reset",
+      "StepRunMode":"Normal",
+      "Queries":[],
+      "Commands":[{"Name":"uut.lds.reset errors on"}]
+    }
+  ]
+}
