@@ -254,7 +254,7 @@ class Stats:
         else:
             timer_thread.stop()
 
-app = QApplication([]) # 开APP
+app = QApplication([]) #123
 app.setWindowIcon(QIcon('image\JR Logo.jpg'))
 stats = Stats()
 stats.ui.show()
